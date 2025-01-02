@@ -1,0 +1,15 @@
+import numpy as np
+from PIL import Image
+import pytesseract
+
+!pip install pytesseract pillow
+
+pytesseract.pytesseract.tesseract_cmd = r'C:/Vrushab/Downloads/pytesseract/Tesseract-OCR'
+
+image_path = r'C:/Vrushab/Downloads/Image_7551.png'
+
+image = Image.open(image_path)
+
+extracted_text = Image.image_to_string(image)
+
+print('Extracted text:',extracted_text)
