@@ -2,6 +2,8 @@ import numpy as np
 from PIL import Image
 import pytesseract
 
+# We can also use OpenCV over here
+
 !pip install pytesseract pillow
 
 pytesseract.pytesseract.tesseract_cmd = r'C:/Vrushab/Downloads/pytesseract/Tesseract-OCR'
